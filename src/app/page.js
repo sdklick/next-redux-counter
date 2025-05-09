@@ -1,7 +1,7 @@
 "use client";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "./redux/slices/counterSlice";
-const page = () => {
+const Page = () => {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
   return (
@@ -19,4 +19,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
